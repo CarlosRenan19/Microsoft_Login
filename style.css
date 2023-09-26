@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+
+body {
+    background-color: #107c10;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 1rem;
+}
+
+form.login {
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    width: 100%;
+    max-width: 440px;
+}
+
+.entrar {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.input input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.432);
+    outline: none;
+    padding: 6px 1px;
+    font-size: 17px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input input::placeholder {
+    font-size: 16px;
+}
+
+.criar {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.criar a {
+    text-decoration: none;
+    color: #056fc0;
+}
+
+.criar a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.security-key {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 15px;
+}
+
+.security-key a {
+    text-decoration: none;
+    color: #056fc0;
+}
+
+.security-key img {
+    cursor: pointer;
+}
+
+.security-key a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.button button {
+    padding: 10px;
+    width: 90px;
+    border: none;
+    background-color: #0067b8;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.button button:hover {
+    background-color: #015799;
+}
+
+.access-key {
+    background-color: white;
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.568);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.links-rapidos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 12px;
+}
+
+.links-rapidos a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.links-rapidos a:hover {
+    text-decoration: underline;
+}
+
+.links-rapidos span {
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 1rem;
+    background-color: white;
+    padding: 20px;
+    width: 440px;
+    position: relative;
+    display: none;
+    width: 100%;
+    max-width: 440px;
+    overflow: hidden;
+}
+
+.solutions {
+    font-weight: bold;
+}
+
+.info-01 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.info-01 p:nth-child(2) {
+    font-size: 14.7px;
+}
+
+.info-01 a {
+    text-decoration: none;
+    color: #056fc0;
+}
+
+.info-01 a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.info-02 span {
+    font-weight: bold;
+}
+
+.correlation, .timestamp {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.details img {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.details.active {
+    display: block;
+}
