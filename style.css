@@ -4,11 +4,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
 }
 
 body {
     background-color: #107c10;
+    min-height: 100vh;
 }
 
 .formulario {
@@ -26,8 +27,8 @@ form.login {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
-    width: 100%;
-    max-width: 440px;
+    width: 90%;
+    max-width: 420px;
 }
 
 .entrar {
@@ -113,8 +114,8 @@ form.login {
 
 .access-key {
     background-color: white;
-    width: 100%;
-    max-width: 440px;
+    width: 90%;
+    max-width: 420px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,6 +131,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: end;
+    position: sticky;
+    top: 100%;
 }
 
 .links-rapidos {
@@ -163,11 +166,10 @@ footer {
     gap: 1rem;
     background-color: white;
     padding: 20px;
-    width: 440px;
     position: relative;
     display: none;
-    width: 100%;
-    max-width: 440px;
+    width: 90%;
+    max-width: 420px;
     overflow: hidden;
 }
 
